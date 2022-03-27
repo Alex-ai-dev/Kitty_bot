@@ -1,18 +1,15 @@
 # kittybot/kittybot.py
 
 import logging
-import os
 
 import requests
 
 from telegram import ReplyKeyboardMarkup
 from telegram.ext import CommandHandler, Updater
 
-from dotenv import load_dotenv 
 
-load_dotenv()
 
-secret_token = os.getenv('TOKEN')
+secret_token = TOKEN
 
 logging.basicConfig(
     format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',
